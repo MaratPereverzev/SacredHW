@@ -11,6 +11,9 @@ const checkVal = (fn, validate) => {
         console.log(
           `В строке ${result.string} искался символ ${result.symbol}. Количество найденных символов: ${result.count} (ожидалось ${data.count})`
         );
+        console.log(
+          `Индексы совпадений: ${result.index} (ожидалось: ${data.index})`
+        );
         console.log("-----------------------------------------");
       }
     });
